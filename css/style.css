@@ -1,10 +1,532 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@400;500;600;700&display=swap");
 
+/* media query */
+@media screen and (max-width: 768px) {
+    .hero-container {
+      height: auto;
+      background: #6a7681;
+    }
+  
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+  
+    .nav-links {
+      gap: 0;
+    }
+  
+    .nav-links li a {
+      display: none;
+    }
+  
+    .nav-btn {
+      display: inline-block;
+      background: transparent;
+      border: 2px solid #acc4dd;
+      padding: 0rem;
+      height: 3rem;
+      width: 7rem;
+      font-size: 1rem;
+      border-radius: 5px;
+    }
+  
+    .hero-section {
+      margin: 1rem;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .hero-left-container img {
+      width: auto;
+      height: 500px;
+    }
+    .hero-right-container {
+      color: #fff;
+      margin-right: 0;
+      text-align: center;
+    }
+  
+    .hero-title {
+      font-size: 3rem;
+      font-family: "Raleway", "Poppins";
+    }
+  
+    .hero-description {
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      width: auto;
+      margin: 0;
+      margin-top: 0.3rem;
+    }
+  
+    .hero-email-container {
+      background: #fff;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      margin-top: 1rem;
+    }
+  
+    .email {
+      padding: 1.2rem 3rem;
+      font-size: 0.9rem;
+      border: none;
+    }
+  
+    .hero-btn {
+      padding: 1rem 1rem;
+      font-size: 1.1rem;
+      background: rgb(76, 148, 117);
+      border: none;
+    }
+  
+    .show-container {
+      margin: 1rem;
+      margin-top: 3rem;
+      text-align: center;
+    }
+  
+    .title {
+      font-family: "Raleway", "Poppins";
+      font-size: 3rem;
+      font-weight: 800;
+    }
+    .card .title {
+      font-family: "Poppins";
+      font-weight: 600;
+      font-size: 2.5rem;
+    }
+    .show-container .top {
+      text-align: center;
+      width: auto;
+      margin: auto;
+    }
+    .show-container .middle {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin: 2rem;
+    }
+    .show-container .bottom img {
+      width: 100%;
+    }
+  
+    .care-container {
+      margin: 1rem;
+      margin-top: 3rem;
+      text-align: center;
+    }
+  
+    .care-card {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      gap: 1rem;
+      margin: 0;
+      margin-top: 2rem;
+    }
+  
+    .details .title {
+      font-size: 2rem;
+    }
+  
+    .care-title {
+      width: auto;
+      margin: auto;
+    }
+  
+    .description {
+      margin: 1rem auto;
+      color: #6a7681;
+      font-size: 1.2rem;
+      line-height: 1.7;
+    }
+    .img {
+    }
+    .img img {
+      width: 100%;
+    }
+  
+    .card2 {
+      flex-direction: row-reverse;
+    }
+  
+    .team-container {
+      text-align: center;
+    }
+  
+    .team-top {
+      margin: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      text-align: left;
+    }
+  
+    .team-card-container {
+      text-align: left;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 1rem;
+      gap: 2rem;
+    }
+  
+    .team-card {
+      width: auto;
+    }
+  
+    .team-card img {
+      width: 100%;
+    }
+  
+    .team-name {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  
+    .seemore-btn {
+      margin-top: 3rem;
+      margin-bottom: 7rem;
+    }
+ 
+    footer {
+      background-color: #0c1622;
+      color: #fff;
+      padding: 0;
+    }
+  
+    .footer-heading {
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+  
+    .footer-logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(112, 112, 112, 0.393);
+      padding-bottom: 4rem;
+      padding-top: 4rem;
+      align-items: center;
+      gap: 2rem;
+    }
+  
+    .footer-links-container {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-between;
+      margin-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  
+    .footer-item {
+      margin: 1.2rem 0;
+      color: rgb(177, 177, 177);
+    }
+  
+  .hero-container {
+    height: auto;
+    background: #6a7681;
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    gap: 0;
+  }
+
+  .nav-links li a {
+    display: none;
+  }
+
+  .nav-btn {
+    display: inline-block;
+    background: transparent;
+    border: 2px solid #acc4dd;
+    padding: 0rem;
+    height: 3rem;
+    width: 7rem;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+
+  .hero-section {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .hero-left-container img {
+    width: auto;
+    height: 500px;
+  }
+  .hero-right-container {
+    color: #fff;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    font-family: "Raleway", "Poppins";
+  }
+
+  .hero-description {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    width: auto;
+    margin: 0;
+    margin-top: 0.3rem;
+  }
+
+  .hero-email-container {
+    background: #fff;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  .email {
+    padding: 1.2rem 3rem;
+    font-size: 0.9rem;
+    border: none;
+  }
+
+  .hero-btn {
+    padding: 1rem 1rem;
+    font-size: 1.1rem;
+    background: rgb(76, 148, 117);
+    border: none;
+  }
+
+  .show-container {
+    margin: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .title {
+    font-family: "Raleway", "Poppins";
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  .card .title {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
+  .show-container .top {
+    text-align: center;
+    width: auto;
+    margin: auto;
+  }
+  .show-container .middle {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+  }
+  .show-container .bottom img {
+    width: 100%;
+  }
+
+  .care-container {
+    margin: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .care-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 1rem;
+    margin: 0;
+    margin-top: 2rem;
+  }
+
+  .details .title {
+    font-size: 2rem;
+  }
+
+  .care-title {
+    width: auto;
+    margin: auto;
+  }
+
+  .description {
+    margin: 1rem auto;
+    color: #6a7681;
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
+  .img {
+  }
+  .img img {
+    width: 100%;
+  }
+
+  .card2 {
+    flex-direction: row-reverse;
+  }
+
+  .team-container {
+    text-align: center;
+  }
+
+  .team-top {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    text-align: left;
+  }
+
+  .team-card-container {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem;
+    gap: 2rem;
+  }
+
+  .team-card {
+    width: auto;
+  }
+
+  .team-card img {
+    width: 100%;
+  }
+
+  .team-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .seemore-btn {
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+  }
+
+  footer {
+    background-color: #0c1622;
+    color: #fff;
+    padding: 0;
+  }
+
+  .footer-heading {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.393);
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .footer-links-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .footer-item {
+    margin: 1.2rem 0;
+    color: rgb(177, 177, 177);
+  }
+}
+/* media query ends */
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
+
+.body{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.body .img{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+header .hero-container{
+  position: fixed;
+  top:0; left:0;
+  z-index: 1000;
+  height:100%;
+  width:35rem;
+  background:#222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+}
+
+.show-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.care-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.team-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+footer .footer-logo .footer-links-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+
 
 li {
   list-style: none;
